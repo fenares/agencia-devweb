@@ -1,0 +1,72 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.menu a{
+    color: blue;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.atendimento a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.atendimento button {
+    background-color: #3751FF;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f9ff;
+    padding: 40px;
+} 
+
+.banner h1 {
+    text-align: center;
+    color: #1E266D;
+    font-size: 46px;
+}
+
+.banner p {
+    color: #455880;
+}
+
+.banner * {
+    margin-top: 20px;
+}
+
+.button_padrao {
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #3751FF;
+    color: white;
+}
