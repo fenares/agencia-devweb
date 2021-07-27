@@ -1,6 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto";
     font-size: 20px;
 }
 
@@ -21,4 +26,40 @@ ul {
 
 .icon_sociais {
     width: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.menu a{
+    color: blue;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.atendimento a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.atendimento button {
+    background-color: #3751FF;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#menuMobile {
+    display: none;
 }

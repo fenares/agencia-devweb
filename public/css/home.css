@@ -1,45 +1,3 @@
-
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-body {
-    font-family: "Roboto";
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-}
-
-.menu a{
-    color: blue;
-    margin-left: 50px;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-.atendimento a {
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.atendimento button {
-    background-color: #3751FF;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    padding: 20px;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
 .banner {
     display: flex;
     flex-direction: column;
@@ -56,6 +14,7 @@ header {
 
 .banner p {
     color: #455880;
+    font-size: 18px;
 }
 
 .banner * {
@@ -71,7 +30,39 @@ header {
     color: white;
 }
 
-.menuMobile {
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle p {
+    font-size: 16px;
+    color: #455880;
+}
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 210px;  
+    
+}
+
+.logo .logo-drawkit {
+    height: 33px;
+    width: 95px;
+}
+.logo .logo-cinemax {
+    height: 90px;
+    width: 174px;
+}
+.logo .logo-disney {
+    height: 34px;
+    width: 71px;
+}
+
+
+
+#menuMobile {
     display: none;
 }
 

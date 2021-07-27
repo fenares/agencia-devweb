@@ -7,14 +7,20 @@
 
 const express = require('express');
 const app = express()
-app.listen(3000, () => console.log("Server running!"))
 
-app.use(express.static('public'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'));
+
+app.listen(3000, () => console.log("Server running!"))
 
 app.get("/", (req, res) => { res.sendFile(__dirname + "/views/home.html")})
 app.get("/blog.html", (req, res) => { res.sendFile(__dirname + "/views/blog.html")})
 app.get("/home.html", (req, res) => { res.redirect("/")})
 app.get("/maintenance", (req, res) => { res.sendFile(__dirname + "/views/maintenance.html")})
+app.get("/contato", (req, res) => { res.sendFile(__dirname + "/views/contato.html")})
+app.post("/receber-contato", (req, res) => { console.log(req.body);
+    res.send("Contato Recebido")})
 
 
 

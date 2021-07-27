@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/contato.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <img src=".\img\logo.png" alt="Agência DevHouse" title="Agência DevHouse" id= "logo">
+        <img src=".\img\menu-icon.png" alt="Menu DevHouse" title = "Menu" id = "menuMobile">
+
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Produto</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Blog</a>
+        </nav>
+        <div class="atendimento">
+            <a href="+00 123 456 789">+00 123 456 789</a>
+            <button> Atendimento</button>
+        </div>
+    </header>
+    <section id = "contato">
+        <div>
+            <h1>Contato</h1>
+            <small>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</small>
+        </div>
+            <form class = "contato-form" action = "/receber-contato" method = "POST">
+                <div class="nome-completo">
+                    <input class = "input-padrao"  type = "text" name = "name" id = "nome" placeholder="Nome">
+                    <input class = "input-padrao"  type = "text" name = "last-name" id = "last-name" placeholder = "Sobrenome">
+                </div>
+
+                <input class = "input-padrao" type = "tel" name = "telefone" id = "telefone" placeholder="Telefone"> <br>
+
+                <select class = "input-padrao" name="service">
+                    <option value = "" disabled selected>Selecione</option>
+                    <option value = "service1" >Serviço 1</option>
+                    <option value = "service2" >Serviço 2</option>
+                    <option value = "service3" >Serviço 3</option>
+                </select> <br>
+                
+                <button class = "button_padrao" type="submit">Enviar dados</button>
+                <button class = "button_padrao" type="reset">Limpar dados</button>
+            
+            </form>
+        
+    </section>
+</body>
+</html>
