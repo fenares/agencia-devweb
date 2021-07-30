@@ -6,21 +6,26 @@
 // Para instalar o nodemon como dev => npm install nodemon -D. Para utilizar o nodemon no Windows, é preciso executar o comando "Set-ExecutionPolicy Unrestricted" no Power. E depois de alterar o scrip no Package.json, utilizar o "npm run app.js"
 
 const express = require('express');
-const app = express()
+const rotasDeProdutos = require("./routes/produtos");
+const rotas = require("./routes");
 
-app.use(express.json())
+const app = express();
+
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
+app.use(rotasDeProdutos);
+app.use(rotas);
 
 app.listen(3000, () => console.log("Server running!"))
 
-app.get("/", (req, res) => { res.sendFile(__dirname + "/views/home.html")})
-app.get("/blog.html", (req, res) => { res.sendFile(__dirname + "/views/blog.html")})
-app.get("/home.html", (req, res) => { res.redirect("/")})
-app.get("/maintenance", (req, res) => { res.sendFile(__dirname + "/views/maintenance.html")})
-app.get("/contato", (req, res) => { res.sendFile(__dirname + "/views/contato.html")})
-app.post("/receber-contato", (req, res) => { console.log(req.body);
-    res.send("Contato Recebido")})
+//app.get("/", (req, res) => { res.sendFile(__dirname + "/views/home.html")})
+//app.get("/blog.html", (req, res) => { res.sendFile(__dirname + "/views/blog.html")})
+//app.get("/home.html", (req, res) => { res.redirect("/")})
+//app.get("/maintenance", (req, res) => { res.sendFile(__dirname + "/views/maintenance.html")})
+//app.get("/contato", (req, res) => { res.sendFile(__dirname + "/views/contato.html")})
+//app.post("/receber-contato", (req, res) => { console.log(req.body);
+    //res.send("Contato Recebido")})
 
 
 
