@@ -41,7 +41,7 @@ div h1{
     background-color: #3751FF;
     padding: 20px;
     border: none;
-    transition: 0.1;
+    transition: background-color 1s;
 }
 
 .button_padrao[type = "submit"]:hover {
@@ -89,7 +89,7 @@ h1.white-title{
     align-items: center;
     flex-wrap: wrap;
     
-}
+} 
 
 .icons_footer img{
     width: 25px;

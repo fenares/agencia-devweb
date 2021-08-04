@@ -6,11 +6,14 @@
 // Para instalar o nodemon como dev => npm install nodemon -D. Para utilizar o nodemon no Windows, é preciso executar o comando "Set-ExecutionPolicy Unrestricted" no Power. E depois de alterar o scrip no Package.json, utilizar o "npm run app.js"
 
 const express = require('express');
+const path = require("path");
 const rotasDeProdutos = require("./routes/produtos");
 const rotas = require("./routes");
 
 const app = express();
 
+app.set("view engine", "ejs");
+app.set("views", path.resolve("views"))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
