@@ -154,6 +154,13 @@ footer p {
     color: rgba(69, 88, 128, 0.5);
 }
 
+.whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
 #menuMobile {
     display: none;
 }
