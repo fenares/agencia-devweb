@@ -15,13 +15,11 @@ h1 {
 
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    position: fixed;
-    width: 100vw;
+    position: relative;
+    width: 98vw;
 }
 
 .menu a{
@@ -41,10 +39,119 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 40px;
     cursor: pointer;
     margin-left: 20px;
+    border: none;
+}
+
+.ready-banner{
+    padding: 0px 60px;
+    background-color: #3751FF;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+h1.white-title{
+    color: white;
+    font-size: 32px;
+}
+
+.white-button {
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+}
+
+.ready-banner p {
+    color: #DFE0EB;
+    font-size: 10px;
+}
+
+.ready-banner-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px;
+    gap: 10px;
+}
+
+.footer-superior {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+footer h1 {
+    color: #1E266D;
+    font-size: 46px;
+}
+
+.footer-bloco-1,
+.footer-bloco-2{
+    width: 40vh;
+}
+
+.footer-bloco-2{
+    align-self: flex-end;
+}
+
+.footer-bloco-1 h1{
+    margin-bottom: 20px;
+}
+
+.footer-bloco-2 h3{
+    color: rgba(30, 38, 109, 1);
+    font-size: 15px;
+}
+
+.icons_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px 30px;
+    list-style: none;
+} 
+
+footer p {
+    margin: 20px 0px;
+}
+
+.icons_footer img{
+    width: 25px;
+}
+
+.final-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px rgba(135, 146, 161, 0.08);
+    padding-top: 10px;
+    margin: 0px 40px;
+    font-size: 10px;
+}
+
+.copyright {
+    color:rgba(69, 88, 128, 0.5);
+}
+
+.privacy-icon{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    align-self: center;
+}
+
+.privacy-icon a {
+    text-decoration: none;
+    color: rgba(69, 88, 128, 0.5);
 }
 
 #menuMobile {

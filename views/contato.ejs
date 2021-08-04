@@ -11,21 +11,8 @@
     <title>Contato</title>
 </head>
 <body>
-    <header>
-        <img src=".\img\logo.png" alt="Agência DevHouse" title="Agência DevHouse" id= "logo">
-        <img src=".\img\menu-icon.png" alt="Menu DevHouse" title = "Menu" id = "menuMobile">
+    <%- include("components/header") %>
 
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Produto</a>
-            <a href="#">Depoimentos</a>
-            <a href="#">Blog</a>
-        </nav>
-        <div class="atendimento">
-            <a href="+00 123 456 789">+00 123 456 789</a>
-            <button> Atendimento</button>
-        </div>
-    </header>
     <section id = "contato">
         <div>
             <h1>Contato</h1>
@@ -52,31 +39,15 @@
             </form>
         
     </section>
-    <section id = "middle-banner">
+    <section class = "ready-banner">
         <h1 class = "white-title">Ready to launch <br>your next website?</h1>
-        <div class="middle-banner-exp">
+        <div class="ready-banner-exp">
             <button class = "white-button" type ="button">Get in touch now</button>
             <p>Or, take a peek inside our design studio</p>
         </div>
     </section>
-    <footer>
-        <h1>devHouse</h1>
-        <p>Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.</p>
-        <small>Resources</small>
-        
-    <div>
-        <ul class = "icons_footer">
-            <li><a href = "https://pt-br.facebook.com/"> <img class = "icon_sociais" src = "img\facebook.svg" alt = "Icone Facebook"></a></li>
-            <li><a href = "https://www.instagram.com/"> <img class = "icon_sociais" src = "img\instagram.svg" alt = "Icone Instagram"></a></li>
-            <li><a href = "https://br.linkedin.com/"> <img class = "icon_sociais" src = "img\linkedin.svg" alt = "Icone Linkedin"></a></li>
-            <li><a href = "https://www.youtube.com/?hl=pt"> <img class = "icon_sociais" src = "img\youtube.svg"  alt = "Icone Youtube"></a></li>
-        </ul>
-    </div>
-
-        <p>Download now</p>
-        <p>Documentation</p>
-            
-    </footer> 
+    
+    <%- include("components/footer")%>
 
 </body>
 </html>

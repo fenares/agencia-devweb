@@ -9,21 +9,8 @@
     <title>Blog da Agência Devhouse</title>
 </head>
 <body>
-    <header>
-        <img src=".\img\logo.png" alt="Agência DevHouse" title="Agência DevHouse" id= "logo">
-        <img src=".\img\menu-icon.png" alt="Menu DevHouse" title = "Menu" id = "menuMobile">
-
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Produto</a>
-            <a href="#">Depoimentos</a>
-            <a href="#">Blog</a>
-        </nav>
-        <div class="atendimento">
-            <a href="+00 123 456 789">+00 123 456 789</a>
-            <button> Atendimento</button>
-        </div>
-    </header>
+    <%- include("components/header") %>
+    
     <main id = "main-blog">
         <h1 class="title-blog">DH News</h1>
         <h3><small>Postado em 02/03/2021</small></h3>
@@ -49,7 +36,7 @@
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur asperiores alias tenetur aliquid ex perspiciatis inventore quam. Officia ex facilis perspiciatis esse incidunt inventore commodi quisquam rem aut dicta!</p>
     </main>
-    <footer class = "rodape">
+    <footer class = "rodape"> 
         <ul>
             <li><a href = "https://pt-br.facebook.com/"> <img class = "icon_sociais" src = "img\facebook.svg" alt = "Icone Facebook"></a></li>
             <li><a href = "https://www.instagram.com/"> <img class = "icon_sociais" src = "img\instagram.svg" alt = "Icone Instagram"></a></li>

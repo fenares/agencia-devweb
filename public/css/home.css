@@ -1,18 +1,25 @@
-.banner {
+.banner,
+.banner-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f2f9ff;
     padding: 40px;
+    position: relative;
+    height: 800px;
 } 
 
-.banner h1 {
+.banner h1,
+.banner-2 h1,
+.depm-h1 {
     text-align: center; 
     color: #1E266D;
     font-size: 46px;
+    padding: 20px 0px 0px;
 }
 
-.banner p {
+.banner p,
+.banner-2 p {
     color: #455880;
     font-size: 18px;
 }
@@ -30,40 +37,113 @@
     color: white;
 }
 
-.middle {
+.middle-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+    height: 350px;
+    padding-bottom: 70px;
 }
 
-.middle p {
+.middle-1 p {
     font-size: 16px;
     color: #455880;
+    position: relative;
+    bottom: 10px;
 }
 
-.logo img {
+.logo {
     margin-top: 20px;
-    margin-left: 210px;  
+    display: flex;
+    position: relative;
+    top: 0px;
+    gap: 0px 300px;
+}
+
+.banner-2 * {
+    margin-top: 20px;
+}
+
+.imgBanner-2{
+    display: flex;
+    position: absolute;
+    padding: 0px 40px;
+}
+
+.imgBanner-2 img {
+    width: 45vw;
+    max-width: 476px;
+    max-height: 727px;
+
+}
+.topics {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.topics h2 {
+    color: #1E266D;
+    font-size: 22px;
+}
+
+.topics h3 {
+    color: #455880;
+    font-size: 18px;
+}
+
+.topic-middle{
+    border-top: solid silver 2px;
+    border-bottom: solid silver 2px;
+    padding-bottom: 20px;
+}
+
+.topic-last {
+    margin-top: 0px;
+}
+
+.depoimentos{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 100px;
+}
+
+.depm {
     
+    width: 270px;
+    border: solid 2px rgba(69, 88, 128, 0.3);
+    border-radius: 4px;
+    padding: 20px 20px 10px;
 }
 
-.logo .logo-drawkit {
-    height: 33px;
-    width: 95px;
-}
-.logo .logo-cinemax {
-    height: 90px;
-    width: 174px;
-}
-.logo .logo-disney {
-    height: 34px;
-    width: 71px;
+.depm p{
+    color: rgba(69, 88, 128, 1);
+    font-size: 16px;
 }
 
-
+.depm-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+}
 
 #menuMobile {
     display: none;
+}
+
+@media (max-width: 1100px) {
+    .atendimento {
+        display: none;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 465px) {

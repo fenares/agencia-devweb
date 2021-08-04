@@ -12,21 +12,8 @@
 </head>
 
 <body>
-    <header>
-        <img src=".\img\logo.png" alt="Agência DevHouse" title="Agência DevHouse" id= "logo">
-        <img src=".\img\menu-icon.png" alt="Menu DevHouse" title = "Menu" id = "menuMobile">
-
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Produto</a>
-            <a href="#">Depoimentos</a>
-            <a href="#">Blog</a>
-        </nav>
-        <div class="atendimento">
-            <a href="+00 123 456 789">+00 123 456 789</a>
-            <button> Atendimento</button>
-        </div>
-    </header>
+    <%- include("components/header") %>
+    
     <main>
         <section class ="banner">
             <h1><%= titulo %></h1>
@@ -40,7 +27,7 @@
         <img src =".\img\banner.png" alt="Banner Principal" title="Banner Principal" id="banner1">
 
         </section>
-        <section class="middle">
+        <section class="middle-1">
             <p> Trusted by forward-thinking software teams around the world</p>
             <div class = "logo">
                 <img src = ".\img\logo-drawkit.png" alt = "DrawKit" title = "DrawKit" class = "logo-drawkit">
@@ -48,17 +35,62 @@
                 <img src = ".\img\logo-disney.png" alt = "Disney" title = "Disney" class = "logo-disney">
             </div>
         </section>
-        <section class = "banner">
+        <section class = "banner-2">
             <h1>Whatever work you do,<br>we're able to help</h1>
-            <img src = ".\img\banner-2.png" alt = "Banner Secundário" title = "Banner Secundário" id="banner2">
+            <div class="imgBanner-2">
+                <img src = ".\img\banner-2.png" alt = "Banner Secundário" title = "Banner Secundário" id="banner2">
             
-            <h2>Design and Assets</h2>
-            <h3>Make your brand stand out with pixel-perfect design crafted to perfection.</h3>
-            <h2>Easy Content</h2>
-            <h3>Import your demos or build pages visually. Bonus: All images and illustrations included!</h3>
-            <h2>Fast and Reliable</h2>
-            <h3>No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.</h3>
+            <div class="topics">
+                <div class="topic-init">
+                <h2>Design and Assets</h2>
+                <h3>Make your brand stand out with pixel-perfect design crafted to perfection.</h3>
+                </div>
+            <div class="topic-middle">
+                <h2>Easy Content</h2>
+                <h3>Import your demos or build pages visually. Bonus: All images and illustrations included!</h3>
+            </div>
+            <div class="topic-last">    
+                <h2>Fast and Reliable</h2>
+                <h3>No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.</h3>
+            </div>
+            </div>
+        </div>
+        </section>
+          
+        <section>
+            <h1 class = "depm-h1">What others are saying</h1>
+            <div class="depoimentos">
+            <div class = "depm">
+                <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+            <div class= "depm-img">
+                <img src= ".\img\user-1.png" alt="Happy User 1">
+                <small>Happy User</small>
+            </div>
+            </div>
+            <div class = "depm">
+                <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+            <div class= "depm-img">
+                <img src= ".\img\user-2.png" alt="Happy User 2">
+                <small>Happy User</small>
+            </div>
+            </div>
+            <div class = "depm">
+                <p>Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
+            <div class= "depm-img">
+                <img src= ".\img\user-3.png" alt="Happy User 3">
+                <small>Happy User</small>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section class = "ready-banner">
+            <h1 class = "white-title">Ready to launch <br>your next website?</h1>
+            <div class="ready-banner-exp">
+                <button class = "white-button" type ="button">Get in touch now</button>
+                <p>Or, take a peek inside our design studio</p>
+            </div>
         </section>
     </main>
+    <%- include("components/footer")%>
 </body>
 </html>
