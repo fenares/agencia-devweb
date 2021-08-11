@@ -20,7 +20,7 @@ app.use(express.static('public'));
 app.use(rotasDeProdutos);
 app.use(rotas);
 
-app.listen(3000, () => console.log("Server running!"))
+app.listen(3000, () => console.log("Server running!")) 
 
 //app.get("/", (req, res) => { res.sendFile(__dirname + "/views/home.html")})
 //app.get("/blog.html", (req, res) => { res.sendFile(__dirname + "/views/blog.html")})
