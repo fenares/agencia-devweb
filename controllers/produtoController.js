@@ -1,7 +1,21 @@
+const produtoModel = require("../models/produto");
 const produtoController = {
     
-    listarProdutos: (req,res) => {res.send("Página de Produtos")
-    }
-}
+    listarProdutosAdmin: (req, res) => {
+        res.render("admin/produtos");
+      },
+      cadastrarProduto: (req, res) => {
+        res.render("admin/cadastroProduto");
+      },
+      salvarProduto: (req, res) => {
+        console.log(req.body);
+        const { nome, descricao, imagem } = req.body;
+        produtoModel.cadastrarProduto(nome, descricao, imagem);
+    
+        console.log(produtoModel.listaDeProdutos);
+    
+        res.send("Cadastro concluido");
+      },
+    };
 
 module.exports = produtoController

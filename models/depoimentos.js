@@ -17,5 +17,9 @@ const depoimentos = [
 
 ];
 
+function cadastrarDepoimento(autor, titulo, descricao) {
+    return depoimentos.push({autor, titulo, descricao, });
+  }
 
-module.exports = depoimentos;
+
+module.exports = { depoimentos, cadastrarDepoimento}

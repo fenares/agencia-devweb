@@ -7,7 +7,10 @@
 
 const express = require('express');
 const path = require("path");
+const methodOverride = require("method-override")
+
 const rotasDeProdutos = require("./routes/produtos");
+
 const rotas = require("./routes");
 
 const app = express();
@@ -17,6 +20,7 @@ app.set("views", path.resolve("views"))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
+app.use(methodOverride("_method"))
 app.use(rotasDeProdutos);
 app.use(rotas);
 
