@@ -1,8 +1,8 @@
-const  {uuid}  = require('uuidv4');
+const  {v4: generateId}  = require('uuid');
 
 let listaDeProdutos = [
 {
-    id: uuid(),
+    id: generateId(),
     nome: "Notebook",
     descricao: "Asus Corei7",
     imagem: "https://cdn.iset.io/assets/55268/produtos/756/adesivo-para-notebook-matrix-1.jpg"
@@ -12,7 +12,7 @@ let listaDeProdutos = [
 
 function cadastrarProduto (nome, descricao, imagem){
     const novoProduto = {
-        id: uuid(),
+        id: generateId(),
         nome, descricao, imagem
     }
     return listaDeProdutos.push (novoProduto);

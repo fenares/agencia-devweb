@@ -8,11 +8,9 @@
 const express = require('express');
 const path = require("path");
 const methodOverride = require("method-override")
-
 const rotasDeProdutos = require("./routes/produtos");
-
 const rotas = require("./routes");
-
+const verificaAdmin = require("./middlewares/admin")
 const app = express();
 
 app.set("view engine", "ejs");
@@ -21,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use(methodOverride("_method"))
+app.use(verificaAdmin)
 app.use(rotasDeProdutos);
 app.use(rotas);
 
