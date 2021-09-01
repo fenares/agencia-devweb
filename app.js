@@ -9,6 +9,7 @@ const express = require('express');
 const path = require("path");
 const methodOverride = require("method-override")
 const rotasDeProdutos = require("./routes/produtos");
+const rotasDeUsuarios = require("./routes/usuariosRotas")
 const rotas = require("./routes");
 const verificaAdmin = require("./middlewares/admin")
 const app = express();
@@ -22,6 +23,7 @@ app.use(methodOverride("_method"))
 app.use(verificaAdmin)
 app.use(rotasDeProdutos);
 app.use(rotas);
+app.use(rotasDeUsuarios)
 
 app.listen(3000, () => console.log("Server running!")) 
 

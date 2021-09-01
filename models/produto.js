@@ -1,4 +1,6 @@
 const  {v4: generateId}  = require('uuid');
+const fs = require("fs");
+const path = require("path");
 
 let listaDeProdutos = [
 {
@@ -12,8 +14,7 @@ let listaDeProdutos = [
 
 function cadastrarProduto (nome, descricao, imagem){
     const novoProduto = {
-        id: generateId(),
-        nome, descricao, imagem
+        id: generateId(), nome, descricao, imagem
     }
     return listaDeProdutos.push (novoProduto);
 }
